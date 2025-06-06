@@ -40,7 +40,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <header className={styles.header}>
-            <h1 className={styles.mainHeading}>Do you need to find a needle in a haystack?</h1>
+            <h1 className={styles.mainHeading}>Find that needle in a haystack.</h1>
             <p className={styles.strapline}>
               Find your precise piece of data instantly, seamlessly, from your favourite messaging app.
             </p>
