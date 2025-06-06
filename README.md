@@ -1,6 +1,6 @@
-# jewl.ai Website
+# Try Jewl - AI-Powered Document Search
 
-A modern, responsive website for jewl.ai, an AI-powered document assistant that helps users find, analyze, and extract valuable insights from documents.
+A modern, responsive website for jewl.ai's try platform - an AI-powered document assistant that helps users find, analyze, and extract valuable insights from documents through WhatsApp and Telegram.
 
 ## Technologies Used
 
@@ -10,65 +10,36 @@ A modern, responsive website for jewl.ai, an AI-powered document assistant that 
 - Shadcn UI Components
 - Zod for form validation
 
-## Recent Optimizations
+## Features
 
-The codebase has been optimized with the following improvements:
+- **Minimalist Splash Page**: Clean, focused interface with clear CTAs
+- **Dual Platform Support**: Direct integration with WhatsApp and Telegram
+- **Responsive Design**: Optimized for all device sizes
+- **Accessibility First**: ARIA labels, semantic structure, keyboard navigation
+- **Performance Optimized**: Fast loading, minimal bundle size
 
-### Project Structure Cleanup
-
-- Consolidated test files into organized directories
-- Removed redundant nested directories
-- Fixed TypeScript configuration and type definitions
-- Eliminated duplicate configuration files
-
-### TypeScript Migration
-
-- Converted key JS files to TypeScript (.tsx)
-- Added proper type definitions and interfaces
-- Set up better TypeScript configuration with strict mode
-
-### Component Structure
-
-- Created reusable UI components (Button, Card)
-- Implemented centralized validation utilities
-- Added icon components for integrations
-
-### Best Practices
-
-- Improved form validation with Zod schema validation
-- Enhanced accessibility with proper ARIA attributes
-- Added loading states for better UX
-- Implemented responsive design patterns
-
-## Directory Structure
+## Project Structure
 
 ```
-jewl-ai-website/
+jewl-ai-website-v2/
 ├── components/             # React components
 │   ├── ui/                 # Reusable UI components (shadcn)
 │   ├── lib/                # Component utility functions
-│   ├── types/              # Component type definitions
-│   ├── Layout.tsx          # Main layout component
-│   ├── Features.tsx        # Features section
-│   └── ContactSection.tsx  # Contact form section
+│   └── Layout.tsx          # Main layout component
 ├── pages/                  # Next.js pages
 │   ├── _app.tsx            # App wrapper
-│   └── index.tsx           # Homepage
+│   └── index.tsx           # Homepage splash page
 ├── public/                 # Static assets
-│   ├── icons/              # Integration icons
+│   ├── icons/              # Platform icons (WhatsApp, Telegram)
 │   └── logo-*.png          # Logo files
 ├── styles/                 # CSS styles
-│   └── globals.css         # Global styles with Tailwind
-├── utils/                  # Utility functions
-│   ├── validation.ts       # Form validation utilities
-│   └── integration-icons.tsx  # Icon components
-├── lib/                    # Shared library code
-├── types/                  # Global type definitions
+│   ├── globals.css         # Global styles with Tailwind
+│   └── splash.module.css   # Splash page specific styles
 ├── consolidated-tests/     # Test files
-│   ├── components/         # Component tests
-│   ├── pages/              # Page tests
-│   └── utils/              # Utility tests
-└── README.md               # Project documentation
+│   ├── splash.test.js      # Main functionality tests
+│   ├── a11y.test.js        # Accessibility tests
+│   └── responsive.test.js  # Responsive design tests
+└── netlify.toml            # Netlify deployment configuration
 ```
 
 ## Getting Started
@@ -92,68 +63,42 @@ jewl-ai-website/
 - `npm run start` - Start the production server
 - `npm run lint` - Run linting
 - `npm test` - Run tests
-- `npm run type-check` - Check types
-
-## Features
-
-- Responsive design for all device sizes
-- Modern UI with animations and transitions
-- Form validation with error handling
-- Integration showcases for repositories and chat interfaces
-- Optimized for accessibility and performance
 
 ## Testing
 
-We have moved all tests to a consolidated structure:
+We maintain comprehensive test coverage:
 
-```
-consolidated-tests/
-├── components/         # Component tests
-├── pages/              # Page tests
-└── utils/              # Utility tests
-```
+- **Splash Tests**: Button functionality, content verification
+- **Accessibility Tests**: ARIA compliance, semantic structure
+- **Responsive Tests**: Mobile/desktop layout validation
 
 To run tests:
-
 ```bash
 npm test
 ```
 
-## Building for Production
+## Deployment
 
-To build the site for production:
+This project is configured for deployment to Netlify as `try.jewl.netlify.app`.
 
-```bash
-npm run build
-```
+### Build Settings
+- Build command: `npm run build`
+- Publish directory: `.next`
+- Node version: 18
 
-This will generate a static site in the `out` directory, ready for deployment.
-
-## Deploying to Netlify
-
-### Option 1: Automatic Deployment with Git
-
-1. Create a new site on Netlify and connect it to your Git repository
-2. Netlify will automatically detect the Next.js project
-3. Use the following build settings:
-   - Build command: `npm run build`
-   - Publish directory: `out`
-4. Click "Deploy site"
-
-### Option 2: Manual Deployment
-
-1. Build the site locally: `npm run build`
-2. Install Netlify CLI: `npm install -g netlify-cli`
-3. Authenticate with Netlify: `netlify login`
-4. Deploy the site: `netlify deploy --prod --dir=out`
+### Deployment Process
+1. Push code to GitHub repository
+2. Connect repository to Netlify
+3. Configure custom domain: `try.jewl.netlify.app`
+4. Automatic deployments on git push
 
 ## Browser Support
 
 - Chrome (latest)
-- Firefox (latest)
+- Firefox (latest)  
 - Safari (latest)
 - Edge (latest)
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/) 
+[MIT](https://choosealicense.com/licenses/mit/)
