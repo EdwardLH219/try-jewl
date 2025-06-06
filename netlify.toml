@@ -1,9 +1,10 @@
 [build]
   publish = "out"
-  command = "npm run build"
+  command = "npm run build && ls -la out/"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+  NPM_VERSION = "10"
 
 [[headers]]
   for = "/*"
