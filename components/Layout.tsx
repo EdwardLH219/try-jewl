@@ -278,7 +278,7 @@ export default function Layout({ children }: LayoutProps) {
             <Link href="/">
               <div className="cursor-pointer">
                 <Image
-                  src="/logo-black.png" 
+                  src="/logo-blackV2.png" 
                   alt="jewl.ai logo" 
                   width={160} 
                   height={48}

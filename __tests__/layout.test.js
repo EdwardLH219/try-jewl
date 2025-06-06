@@ -13,7 +13,7 @@ describe('Layout component', () => {
     // Check that the header logo image is present
     const headerLogo = screen.getAllByAltText('jewl.ai logo')[0];
     expect(headerLogo).toBeInTheDocument();
-    expect(headerLogo).toHaveAttribute('src', '/logo-black.png');
+    expect(headerLogo).toHaveAttribute('src', '/logo-blackV2.png');
   });
   
   it('renders footer with copyright text', () => {
