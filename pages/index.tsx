@@ -17,15 +17,24 @@ export default function Home() {
         <meta property="og:title" content="JEWL - Find Your Data Instantly" />
         <meta property="og:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
         <meta property="og:image" content="https://try.jewl.netlify.app/jewl-diamond-social.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="636" />
+        <meta property="og:image:height" content="421" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:site_name" content="JEWL" />
+        <meta property="og:locale" content="en_US" />
         
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://try.jewl.netlify.app/" />
-        <meta property="twitter:title" content="JEWL - Find Your Data Instantly" />
-        <meta property="twitter:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
-        <meta property="twitter:image" content="https://try.jewl.netlify.app/jewl-diamond-social.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://try.jewl.netlify.app/" />
+        <meta name="twitter:title" content="JEWL - Find Your Data Instantly" />
+        <meta name="twitter:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
+        <meta name="twitter:image" content="https://try.jewl.netlify.app/jewl-diamond-social.png" />
+        <meta name="twitter:image:alt" content="JEWL - Colorful diamond logo representing instant data discovery" />
+        
+        {/* Additional SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="JEWL Team" />
+        <link rel="canonical" href="https://try.jewl.netlify.app/" />
       </Head>
 
       <div className={styles.container}>
