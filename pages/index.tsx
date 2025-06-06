@@ -16,9 +16,9 @@ export default function Home() {
         <meta property="og:url" content="https://try-jewl.netlify.app/" />
         <meta property="og:title" content="JEWL - Find Your Data Instantly" />
         <meta property="og:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
-        <meta property="og:image" content="https://try-jewl.netlify.app/jewl-diamond-social.png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="264" />
+        <meta property="og:image" content="https://try-jewl.netlify.app/jewl-diamond-socialV2.png" />
+        <meta property="og:image:width" content="832" />
+        <meta property="og:image:height" content="832" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:site_name" content="JEWL" />
         <meta property="og:locale" content="en_US" />
@@ -28,7 +28,7 @@ export default function Home() {
         <meta name="twitter:url" content="https://try-jewl.netlify.app/" />
         <meta name="twitter:title" content="JEWL - Find Your Data Instantly" />
         <meta name="twitter:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
-        <meta name="twitter:image" content="https://try-jewl.netlify.app/jewl-diamond-social.png" />
+        <meta name="twitter:image" content="https://try-jewl.netlify.app/jewl-diamond-socialV2.png" />
         <meta name="twitter:image:alt" content="JEWL - Colorful diamond logo representing instant data discovery" />
         
         {/* Additional SEO */}
