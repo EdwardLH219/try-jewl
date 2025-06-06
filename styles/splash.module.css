@@ -1,0 +1,188 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: white;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.containerWrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 4vh 1rem 0 1rem;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0 15px 0;
+  flex: 0 0 auto;
+}
+
+.mainHeading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.strapline {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctaSection {
+  text-align: center;
+  width: 100%;
+}
+
+.ctaHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 150ms ease;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buttonIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.ctaButton:hover {
+  background-color: black;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  padding: 40px 0 30px 0;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.aboutSection {
+  margin-bottom: 25px;
+}
+
+.aboutText {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #555;
+}
+
+.securityStatement {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.securityStatement p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mainHeading {
+    font-size: 2.2rem;
+  }
+  
+  .strapline {
+    font-size: 1.1rem;
+  }
+  
+  .ctaHeading {
+    font-size: 1.6rem;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ctaButton {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .aboutText {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile responsive - stack buttons vertically */
+@media (max-width: 480px) {
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .ctaButton {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .containerWrapper {
+    padding: 3vh 1rem 0 1rem;
+  }
+  
+  .mainHeading {
+    font-size: 2rem;
+  }
+  
+  .strapline {
+    font-size: 1rem;
+  }
+} 
