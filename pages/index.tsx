@@ -9,7 +9,7 @@ export default function Home() {
         <title>JEWL - Find Your Data Instantly</title>
         <meta name="description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faviconV2.png" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
