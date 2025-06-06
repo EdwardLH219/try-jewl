@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Needle in a Haystack - Find Your Data Instantly</title>
+        <title>JEWL - Find Your Data Instantly</title>
         <meta name="description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
