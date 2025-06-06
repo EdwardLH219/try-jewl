@@ -3,16 +3,6 @@ import Head from 'next/head';
 import styles from '../styles/splash.module.css';
 
 export default function Home() {
-  const handleWhatsApp = () => {
-    console.log("WhatsApp connect clicked");
-    // TODO: Implement WhatsApp connection
-  };
-
-  const handleTelegram = () => {
-    console.log("Telegram connect clicked");
-    // TODO: Implement Telegram connection
-  };
-
   return (
     <>
       <Head>
@@ -35,22 +25,26 @@ export default function Home() {
             <section className={styles.ctaSection}>
               <h2 className={styles.ctaHeading}>Start now!</h2>
               <div className={styles.buttonContainer} role="group">
-                <button 
+                <a 
+                  href="https://wa.me/17863213799?text=Hello"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.ctaButton} 
-                  onClick={handleWhatsApp}
                   aria-label="Connect WhatsApp"
                 >
                   <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
                   Connect WhatsApp
-                </button>
-                <button 
+                </a>
+                <a 
+                  href="https://t.me/StarlogikJewlBot"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={styles.ctaButton} 
-                  onClick={handleTelegram}
                   aria-label="Connect Telegram"
                 >
                   <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
                   Connect Telegram
-                </button>
+                </a>
               </div>
             </section>
           </main>
