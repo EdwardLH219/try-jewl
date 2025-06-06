@@ -17,8 +17,8 @@ export default function Home() {
         <meta property="og:title" content="JEWL - Find Your Data Instantly" />
         <meta property="og:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
         <meta property="og:image" content="https://try-jewl.netlify.app/jewl-diamond-social.png" />
-        <meta property="og:image:width" content="636" />
-        <meta property="og:image:height" content="421" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="264" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:site_name" content="JEWL" />
         <meta property="og:locale" content="en_US" />
