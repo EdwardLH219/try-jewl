@@ -10,6 +10,22 @@ export default function Home() {
         <meta name="description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://try.jewl.netlify.app/" />
+        <meta property="og:title" content="JEWL - Find Your Data Instantly" />
+        <meta property="og:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
+        <meta property="og:image" content="https://try.jewl.netlify.app/jewl-diamond-social.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://try.jewl.netlify.app/" />
+        <meta property="twitter:title" content="JEWL - Find Your Data Instantly" />
+        <meta property="twitter:description" content="Find your precise piece of data instantly, seamlessly, from your favourite messaging app." />
+        <meta property="twitter:image" content="https://try.jewl.netlify.app/jewl-diamond-social.png" />
       </Head>
 
       <div className={styles.container}>
