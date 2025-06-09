@@ -52,10 +52,10 @@ describe('Responsive Splash Page', () => {
   test('buttons have responsive classes applied', () => {
     render(<Home />);
     
-    const whatsappButton = screen.getByRole('button', { 
+    const whatsappButton = screen.getByRole('link', { 
       name: /connect whatsapp/i 
     });
-    const telegramButton = screen.getByRole('button', { 
+    const telegramButton = screen.getByRole('link', { 
       name: /connect telegram/i 
     });
     
@@ -78,10 +78,10 @@ describe('Responsive Splash Page', () => {
     
     render(<Home />);
     
-    const whatsappButton = screen.getByRole('button', { 
+    const whatsappButton = screen.getByRole('link', { 
       name: /connect whatsapp/i 
     });
-    const telegramButton = screen.getByRole('button', { 
+    const telegramButton = screen.getByRole('link', { 
       name: /connect telegram/i 
     });
     
@@ -113,10 +113,10 @@ describe('Responsive Splash Page', () => {
     const buttonContainer = document.querySelector('[class*="buttonContainer"]');
     expect(buttonContainer).toBeInTheDocument();
     
-    const whatsappButton = screen.getByRole('button', { 
+    const whatsappButton = screen.getByRole('link', { 
       name: /connect whatsapp/i 
     });
-    const telegramButton = screen.getByRole('button', { 
+    const telegramButton = screen.getByRole('link', { 
       name: /connect telegram/i 
     });
     

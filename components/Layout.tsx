@@ -272,17 +272,17 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       
-      <header className="sticky-header bg-white/90 backdrop-blur py-6">
+      <header className="sticky-header bg-black backdrop-blur py-6">
         <div className="container mx-auto flex justify-center items-center">
           <div className="flex items-center">
             <Link href="/">
               <div className="cursor-pointer">
                 <Image
-                  src="/logo-blackV2.png" 
+                  src="/logo-whiteV2.png" 
                   alt="jewl.ai logo" 
-                  width={160} 
-                  height={48}
-                  className="h-12 w-auto" 
+                  width={192} 
+                  height={58}
+                  className="h-14 w-auto" 
                   unoptimized
                   priority
                 />
@@ -296,18 +296,28 @@ export default function Layout({ children }: LayoutProps) {
         {children}
       </main>
 
-      <footer className="bg-black text-white py-8">
+      <footer className="py-8" style={{backgroundColor: '#f5f5f5'}}>
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} jewl.ai. All rights reserved.
-            </p>
-            <p className="text-gray-500 text-sm mt-2 md:mt-0">
-              Jewl is a dito.tech innovation
-            </p>
-            <div className="mt-4 md:mt-0 flex space-x-6">
-              <a href="#" className="text-gray-500 hover:text-white transition text-sm">Privacy Policy</a>
-              <a href="#" className="text-gray-500 hover:text-white transition text-sm">Terms of Service</a>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <div className="flex flex-col space-y-3 text-center lg:text-left">
+              <h3 className="text-black text-xs font-bold">About Us</h3>
+              <p className="text-gray-700 text-xs">
+                We are a team of passionate tech enthusiasts who believe that finding a precise piece of information 
+                shouldn't be a treasure hunt. Our mission is to bridge the gap between your data repositories, images or individual docs 
+                and the messaging apps you use every day, making information retrieval as simple as sending a message.
+              </p>
+              <p className="text-black text-sm">
+                &copy; {new Date().getFullYear()} jewl.ai. All rights reserved.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-center items-end">
+              <p className="text-black text-sm">
+                Jewl is a dito.tech innovation
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end items-end space-x-6 text-sm">
+              <a href="#" className="text-black hover:text-gray-600 transition">Privacy Policy</a>
+              <a href="#" className="text-black hover:text-gray-600 transition">Terms of Service</a>
             </div>
           </div>
         </div>

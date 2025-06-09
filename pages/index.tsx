@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/splash.module.css';
+import HowItWorks from '../components/HowItWorks';
 
 export default function Home() {
   return (
@@ -46,49 +47,60 @@ export default function Home() {
             </p>
           </header>
 
-          <main className={styles.main}>
-            <section className={styles.ctaSection}>
-              <h2 className={styles.ctaHeading}>Start now!</h2>
-              <div className={styles.buttonContainer} role="group">
-                <a 
-                  href="https://wa.me/17863213799?text=Hello"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.ctaButton} 
-                  aria-label="Connect WhatsApp"
-                >
-                  <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
-                  Connect WhatsApp
-                </a>
-                <a 
-                  href="https://t.me/StarlogikJewlBot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.ctaButton} 
-                  aria-label="Connect Telegram"
-                >
-                  <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
-                  Connect Telegram
-                </a>
-              </div>
-            </section>
-          </main>
-
-          <footer className={styles.footer}>
-            <div className={styles.aboutSection}>
-              <p className={styles.aboutText}>
-                We are a team of passionate tech enthusiasts who believe that finding a precise piece of information 
-                shouldn't be a treasure hunt. Our mission is to bridge the gap between your data repositories, images or individual docs 
-                and the messaging apps you use every day, making information retrieval as simple as sending a message.
-              </p>
+          <section id="how-what" className={styles.howWhat}>
+            <div className={styles.usesColumn}>
+              <h2>Uses</h2>
+              <ul>
+                <li>Save and retrieve important info</li>
+                <li>Search exact details in scanned files or drives</li>
+                <li>Get answers from reports, forms, or folders</li>
+              </ul>
             </div>
-            
-            <div className={styles.securityStatement}>
-              <p>Secure, instant, precise and easy RETRIEVAL of that ONE singular urgent piece of data!</p>
+            <div className={styles.examplesColumn}>
+              <h2>Examples</h2>
+              <ul>
+                <li>What is my child's passport expiry date?</li>
+                <li>Find the tax number from last year's return</li>
+                <li>Show me the May payment receipt from James</li>
+              </ul>
             </div>
-          </footer>
+          </section>
         </div>
       </div>
+
+      <main className={styles.main}>
+        <section className={styles.ctaSection}>
+          <h2 className={styles.ctaHeading}>Start now!</h2>
+          <div className={styles.buttonContainer} role="group">
+            <a 
+              href="https://wa.me/17863213799?text=Hello"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.ctaButton} 
+              aria-label="Connect WhatsApp"
+            >
+              <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
+              Connect WhatsApp
+            </a>
+            <a 
+              href="https://t.me/StarlogikJewlBot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.ctaButton} 
+              aria-label="Connect Telegram"
+            >
+              <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
+              Connect Telegram
+            </a>
+          </div>
+        </section>
+
+        <HowItWorks />
+
+        <div className={styles.securityStatement}>
+          <p>Secure, instant, precise and easy RETRIEVAL of that ONE singular urgent piece of data!</p>
+        </div>
+      </main>
     </>
   );
 }
