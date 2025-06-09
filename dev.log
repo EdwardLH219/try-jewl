@@ -364,3 +364,7 @@
  ✓ Compiled in 725ms (394 modules)
  ✓ Compiled /_error in 271ms (396 modules)
  GET /.well-known/appspecific/com.chrome.devtools.json 404 in 338ms
+ ✓ Compiled in 455ms (394 modules)
+ ✓ Compiled in 301ms (394 modules)
+ ✓ Compiled /_error in 134ms (396 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 243ms
