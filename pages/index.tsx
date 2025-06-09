@@ -47,21 +47,59 @@ export default function Home() {
             </p>
           </header>
 
+          <section className={styles.ctaSection}>
+            <h2 className={styles.ctaHeading}>Start now!</h2>
+            <div className={styles.buttonContainer} role="group">
+              <a 
+                href="https://wa.me/17863213799?text=Hello"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton} 
+                aria-label="Connect WhatsApp"
+              >
+                <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
+                Connect WhatsApp
+              </a>
+              <a 
+                href="https://t.me/StarlogikJewlBot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.ctaButton} 
+                aria-label="Connect Telegram"
+              >
+                <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
+                Connect Telegram
+              </a>
+            </div>
+          </section>
+
           <section id="how-what" className={styles.howWhat}>
             <div className={styles.usesColumn}>
               <h2>Uses</h2>
               <ul>
-                <li>Save and retrieve important info</li>
-                <li>Search exact details in scanned files or drives</li>
-                <li>Get answers from reports, forms, or folders</li>
+                <li className={styles.regularCard}>
+                  Save and retrieve important info
+                </li>
+                <li className={styles.regularCard}>
+                  Search exact details in scanned files or drives
+                </li>
+                <li className={styles.regularCard}>
+                  Get answers from reports, forms, or folders
+                </li>
               </ul>
             </div>
             <div className={styles.examplesColumn}>
               <h2>Examples</h2>
               <ul>
-                <li>What is my child's passport expiry date?</li>
-                <li>Find the tax number from last year's return</li>
-                <li>Show me the May payment receipt from James</li>
+                <li className={styles.regularCard}>
+                  What is my child's passport expiry date?
+                </li>
+                <li className={styles.regularCard}>
+                  Find the tax number from last year's return
+                </li>
+                <li className={styles.regularCard}>
+                  Show me the May payment receipt from James
+                </li>
               </ul>
             </div>
           </section>
@@ -69,32 +107,6 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <section className={styles.ctaSection}>
-          <h2 className={styles.ctaHeading}>Start now!</h2>
-          <div className={styles.buttonContainer} role="group">
-            <a 
-              href="https://wa.me/17863213799?text=Hello"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.ctaButton} 
-              aria-label="Connect WhatsApp"
-            >
-              <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
-              Connect WhatsApp
-            </a>
-            <a 
-              href="https://t.me/StarlogikJewlBot"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.ctaButton} 
-              aria-label="Connect Telegram"
-            >
-              <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
-              Connect Telegram
-            </a>
-          </div>
-        </section>
-
         <HowItWorks />
 
         <div className={styles.securityStatement}>
