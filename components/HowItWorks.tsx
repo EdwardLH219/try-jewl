@@ -4,6 +4,7 @@ export default function HowItWorks() {
   return (
     <div className="bg-black py-12 px-6">
       <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold text-white text-center mb-12">How it works</h2>
         <div className="flex flex-col md:flex-row gap-6">
           {/* Step 1: Connect Chat */}
           <div className="flex-1 bg-zinc-800 rounded-2xl border border-zinc-700 p-6 text-center">
