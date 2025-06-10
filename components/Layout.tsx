@@ -317,7 +317,7 @@ export default function Layout({ children }: LayoutProps) {
                 Jewl is a dito.tech innovation
               </p>
             </div>
-            <div className="flex justify-end items-end">
+            <div className="flex justify-center lg:justify-end items-end">
               <div className="flex space-x-6">
                 <PrivacyPolicyModal />
                 <TermsOfServiceModal />
