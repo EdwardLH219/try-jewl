@@ -13,6 +13,8 @@ import {
 } from '@/utils/integration-icons';
 import { Button } from '@/components/ui/button';
 import { Modal } from '@/components/ui/modal';
+import PrivacyPolicyModal from '@/components/PrivacyPolicyModal';
+import TermsOfServiceModal from '@/components/TermsOfServiceModal';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -315,9 +317,11 @@ export default function Layout({ children }: LayoutProps) {
                 Jewl is a dito.tech innovation
               </p>
             </div>
-            <div className="flex justify-center lg:justify-end items-end space-x-6 text-sm">
-              <a href="#" className="text-black hover:text-gray-600 transition">Privacy Policy</a>
-              <a href="#" className="text-black hover:text-gray-600 transition">Terms of Service</a>
+            <div className="flex justify-end items-end">
+              <div className="flex space-x-6">
+                <PrivacyPolicyModal />
+                <TermsOfServiceModal />
+              </div>
             </div>
           </div>
         </div>
