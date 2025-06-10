@@ -11,7 +11,7 @@ export default function TermsOfServiceModal() {
   return (
     <Dialog>
       <DialogTrigger className="text-black text-sm hover:text-gray-600 transition">
-        Terms of Service
+        Terms
       </DialogTrigger>
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
