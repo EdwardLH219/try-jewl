@@ -10,7 +10,7 @@ import {
 export default function PrivacyPolicyModal() {
   return (
     <Dialog>
-      <DialogTrigger className="text-black text-sm hover:text-gray-600 transition">
+      <DialogTrigger className="text-white text-sm hover:text-gray-300 transition">
         Privacy
       </DialogTrigger>
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">

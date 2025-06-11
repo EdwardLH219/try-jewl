@@ -298,28 +298,20 @@ export default function Layout({ children }: LayoutProps) {
         {children}
       </main>
 
-      <footer className="py-8" style={{backgroundColor: '#f5f5f5'}}>
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-            <div className="flex flex-col space-y-3 text-center lg:text-left">
-              <h3 className="text-black text-xs font-bold">About Us</h3>
-              <p className="text-gray-700 text-xs">
-                We are a team of passionate tech enthusiasts who believe that finding a precise piece of information 
-                shouldn't be a treasure hunt. Our mission is to bridge the gap between your data repositories, images or individual docs 
-                and the messaging apps you use every day, making information retrieval as simple as sending a message.
-              </p>
-              <p className="text-black text-sm">
-                &copy; {new Date().getFullYear()} jewl.ai. All rights reserved.
-              </p>
+      <footer className="py-4 bg-[#1E1E1E]">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
+            <div className="text-center md:text-left md:flex-1">
+              <p className="text-sm text-white">© {new Date().getFullYear()} jewl.ai. All rights reserved.</p>
             </div>
-            <div className="flex justify-center lg:justify-center items-end">
-              <p className="text-black text-sm">
-                Jewl is a dito.tech innovation
-              </p>
+            <div className="text-center md:flex-1 md:flex md:justify-center">
+              <p className="text-sm text-white">Jewl is a dito.tech innovation</p>
             </div>
-            <div className="flex justify-center lg:justify-end items-end">
-              <div className="flex space-x-6">
+            <div className="flex space-x-6 md:flex-1 md:justify-end">
+              <div className="text-sm text-white hover:text-gray-300">
                 <PrivacyPolicyModal />
+              </div>
+              <div className="text-sm text-white hover:text-gray-300">
                 <TermsOfServiceModal />
               </div>
             </div>

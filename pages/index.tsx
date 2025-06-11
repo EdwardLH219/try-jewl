@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import styles from '../styles/splash.module.css';
 import HowItWorks from '../components/HowItWorks';
 
 export default function Home() {
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    // Function to format time as HH:mm
+    const formatTime = () => {
+      const now = new Date();
+      return now.toLocaleTimeString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
+    };
+
+    // Set initial time
+    setCurrentTime(formatTime());
+
+    // Update time every minute
+    const interval = setInterval(() => {
+      setCurrentTime(formatTime());
+    }, 60000);
+
+    // Cleanup interval on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <Head>
@@ -41,9 +66,9 @@ export default function Home() {
       <div className={styles.container}>
         <div className={styles.containerWrapper}>
           <header className={styles.header}>
-            <h1 className={styles.mainHeading}>Find that needle in a haystack.</h1>
-            <p className={styles.strapline}>
-              Find your precise piece of data instantly, seamlessly, from your favourite messaging app.
+            <h1 className={styles.mainHeading}>Looking for a needle in a haystack?</h1>
+            <p className="text-xl text-gray-700">
+              Get that exact info instantly using simple messaging apps
             </p>
           </header>
 
@@ -72,47 +97,58 @@ export default function Home() {
               </a>
             </div>
           </section>
-
-          <section id="how-what" className={styles.howWhat}>
-            <div className={styles.usesColumn}>
-              <h2>Uses</h2>
-              <ul>
-                <li className={styles.regularCard}>
-                  Save and retrieve important info
-                </li>
-                <li className={styles.regularCard}>
-                  Search exact details in scanned files or drives
-                </li>
-                <li className={styles.regularCard}>
-                  Get answers from reports, forms, or folders
-                </li>
-              </ul>
-            </div>
-            <div className={styles.examplesColumn}>
-              <h2>Examples</h2>
-              <ul>
-                <li className={styles.regularCard}>
-                  What is my child's passport expiry date?
-                </li>
-                <li className={styles.regularCard}>
-                  Find the tax number from last year's return
-                </li>
-                <li className={styles.regularCard}>
-                  Show me the May payment receipt from James
-                </li>
-              </ul>
-            </div>
-          </section>
         </div>
       </div>
 
-      <main className={styles.main}>
+      <section className="w-full bg-black">
         <HowItWorks />
+      </section>
 
-        <div className={styles.securityStatement}>
-          <p>Secure, instant, precise and easy RETRIEVAL of that ONE singular urgent piece of data!</p>
+      <section className="w-full bg-[#1E1E1E]">
+        <div className="w-full py-12">
+          <p className="text-white text-center text-xl mb-16">
+            Store and retrieve important info from files images and drives e.g.
+          </p>
+          <div className="max-w-3xl mx-auto px-4">
+            <div className="space-y-3">
+              <div className="flex justify-center">
+                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                  <p className="text-lg">What is my passport expiry date</p>
+                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">{currentTime}</p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                  <p className="text-lg">What is my company EIN number</p>
+                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">{currentTime}</p>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                  <p className="text-lg">Show the May pay receipt from Ben</p>
+                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">{currentTime}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+
+      <div className={styles.container}>
+        <section className="py-12 px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-6">About Us</h2>
+            <div className="text-center space-y-6">
+              <p className="text-xl text-gray-700">
+                We are a team of passionate tech enthusiasts who believe that finding your crown jewels should not be a treasure hunt.
+              </p>
+              <p className="text-xl text-gray-700">
+                Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info retrieval as simple as sending a message.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </>
   );
 }
