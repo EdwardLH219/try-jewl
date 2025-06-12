@@ -4,7 +4,10 @@ export default function HowItWorks() {
   return (
     <div className="py-12 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-white text-center mb-12">How it works</h2>
+        <p className="text-white text-center text-xl mb-8">
+          Secure & Instant, Retrieval of that<br className="block sm:hidden" /> 1 Precise Piece of Data.
+        </p>
+        <h2 className="text-[2rem] md:text-3xl font-bold text-white text-center mb-12">How it works</h2>
         <div className="flex flex-col md:flex-row gap-6 mb-12">
           {/* Step 1: Connect Chat */}
           <div className="flex-1 bg-zinc-800 rounded-2xl border border-zinc-700 p-6 text-center">
@@ -15,7 +18,7 @@ export default function HowItWorks() {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Connect Chat</h3>
             <p className="text-zinc-300 text-sm leading-relaxed">
-              Click "Connect via WhatsApp" or "Telegram"
+              Click "Connect WhatsApp" or "Telegram"
             </p>
           </div>
 
@@ -31,7 +34,7 @@ export default function HowItWorks() {
               Drop a file, pdf or image in the chat.
             </p>
             <p className="text-zinc-400 text-xs text-center">
-              🙏 accepted ⛔ error ✌ already uploaded 👌 processing 💎 done
+              🙏 accepted ⛔ error ✌ already uploaded<br className="block sm:hidden" /> 👌 processing 💎 done
             </p>
           </div>
 
@@ -44,13 +47,10 @@ export default function HowItWorks() {
             </div>
             <h3 className="text-xl font-bold text-white mb-4">Get it!</h3>
             <p className="text-zinc-300 text-sm leading-relaxed">
-              Ask Jewl a question. Retrieve instantly.
+              Ask Jewl a question.<br />Retrieve instantly.
             </p>
           </div>
         </div>
-        <p className="text-white text-center text-xl">
-          Secure & Instant, Retrieval of that 1 Precise Piece of Data.
-        </p>
       </div>
     </div>
   );

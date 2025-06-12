@@ -58,7 +58,7 @@ export default function Features() {
     <section id="features" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="mb-6">Key Features</h2>
+          <h2 className="text-[2rem] md:text-3xl font-bold mb-6">Key Features</h2>
           <p className="text-xl text-gray-700">
             Jewl leverages cutting-edge artificial intelligence to transform how you interact with your documents.
           </p>

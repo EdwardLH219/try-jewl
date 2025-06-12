@@ -31,10 +31,16 @@
 }
 
 .mainHeading {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 0 0 20px 0;
   line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .mainHeading {
+    font-size: 2rem;
+  }
 }
 
 .strapline {
@@ -57,7 +63,7 @@
   width: 100%;
   background-color: white;
   color: black;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -155,7 +161,7 @@
 /* Responsive design */
 @media (max-width: 768px) {
   .mainHeading {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .strapline {
@@ -163,7 +169,7 @@
   }
   
   .ctaHeading {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   
   .buttonContainer {
@@ -210,7 +216,7 @@
   }
   
   .mainHeading {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   
   .strapline {
