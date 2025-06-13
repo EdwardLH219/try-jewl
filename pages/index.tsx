@@ -104,57 +104,23 @@ export default function Home() {
         <HowItWorks />
       </section>
 
-      <section className="w-full bg-[#1E1E1E]">
-        <div className="w-full py-12">
-          <p className="text-white text-center text-xl mb-16">
-            Store and retrieve important info,<br className="block sm:hidden" /> here's some ideas…
-          </p>
-          <div className="max-w-3xl mx-auto px-4">
-            <div className="space-y-3">
-              <div className="flex justify-center">
-                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
-                  <p className="text-lg">What is my passport expiry date</p>
-                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
-                    {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
-                  <p className="text-lg">What is my company EIN number</p>
-                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
-                    {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
-                  <p className="text-lg">Show the May pay receipt from Ben</p>
-                  <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
-                    {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
-                  </p>
-                </div>
+      <section className="w-full bg-[#F5F5F5]">
+        <div className="w-full bg-[#F5F5F5]">
+          <section className="py-12 px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-[2rem] md:text-4xl font-bold text-center mb-6">About</h2>
+              <div className="text-center space-y-6">
+                <p className="text-xl text-gray-700">
+                  We are a team of passionate tech enthusiasts who believe that finding your crown jewels should not be a treasure hunt.
+                </p>
+                <p className="text-xl text-gray-700">
+                  Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info retrieval as simple as sending a message.
+                </p>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
-
-      <div className={styles.container}>
-        <section className="py-12 px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-[2rem] md:text-4xl font-bold text-center mb-6">About</h2>
-            <div className="text-center space-y-6">
-              <p className="text-xl text-gray-700">
-                We are a team of passionate tech enthusiasts who believe that finding your crown jewels should not be a treasure hunt.
-              </p>
-              <p className="text-xl text-gray-700">
-                Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info retrieval as simple as sending a message.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
     </>
   );
 }

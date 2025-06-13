@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function HowItWorks() {
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    // Function to format time as HH:mm
+    const formatTime = () => {
+      const now = new Date();
+      return now.toLocaleTimeString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      });
+    };
+
+    // Set initial time
+    setCurrentTime(formatTime());
+
+    // Update time every minute
+    const interval = setInterval(() => {
+      setCurrentTime(formatTime());
+    }, 60000);
+
+    // Cleanup interval on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="py-12 px-6">
       <div className="max-w-4xl mx-auto">
@@ -49,6 +74,37 @@ export default function HowItWorks() {
             <p className="text-zinc-300 text-sm leading-relaxed">
               Ask Jewl a question.<br />Retrieve instantly.
             </p>
+          </div>
+        </div>
+        <p className="text-white text-center text-xl mb-12">
+          Store and retrieve important info<span className="hidden sm:inline">,</span><br className="block sm:hidden" /> here some ideas…
+        </p>
+        <div className="max-w-3xl mx-auto">
+          <div className="space-y-3">
+            <div className="flex justify-center">
+              <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                <p className="text-lg">What is my passport expiry date</p>
+                <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
+                  {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                <p className="text-lg">What is my company EIN number</p>
+                <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
+                  {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
+                <p className="text-lg">Show the May pay receipt from Ben</p>
+                <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
+                  {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -274,13 +274,13 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       
-      <header className="sticky-header bg-black backdrop-blur py-6">
+      <header className="sticky-header bg-white backdrop-blur py-6 shadow-md">
         <div className="container mx-auto flex justify-center items-center">
           <div className="flex items-center">
             <Link href="/">
               <div className="cursor-pointer">
                 <Image
-                  src="/logo-whiteV2.png" 
+                  src="/logo-blackV2.png" 
                   alt="jewl.ai logo" 
                   width={192} 
                   height={58}
