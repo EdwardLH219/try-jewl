@@ -37,7 +37,7 @@ export default function HowItWorks() {
           {/* Step 1: Connect Chat */}
           <div className="flex-1 bg-zinc-800 rounded-2xl border border-zinc-700 p-6 text-center h-[250px] md:h-auto flex flex-col">
             <div className="mb-6">
-              <span className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white rounded-full text-xl font-bold">
+              <span className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#AADD00] to-[#558800] text-black rounded-full text-xl font-bold">
                 1
               </span>
             </div>
@@ -50,7 +50,7 @@ export default function HowItWorks() {
           {/* Step 2: Upload a Document */}
           <div className="flex-1 bg-zinc-800 rounded-2xl border border-zinc-700 p-6 text-center h-[250px] md:h-auto flex flex-col">
             <div className="mb-6">
-              <span className="inline-flex items-center justify-center w-12 h-12 bg-green-600 text-white rounded-full text-xl font-bold">
+              <span className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#FFE600] to-[#FF8C00] text-black rounded-full text-xl font-bold">
                 2
               </span>
             </div>
@@ -66,7 +66,7 @@ export default function HowItWorks() {
           {/* Step 3: Get it! */}
           <div className="flex-1 bg-zinc-800 rounded-2xl border border-zinc-700 p-6 text-center h-[250px] md:h-auto flex flex-col">
             <div className="mb-6">
-              <span className="inline-flex items-center justify-center w-12 h-12 bg-purple-600 text-white rounded-full text-xl font-bold">
+              <span className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-[#45B6FF] to-[#0066CC] text-black rounded-full text-xl font-bold">
                 3
               </span>
             </div>
