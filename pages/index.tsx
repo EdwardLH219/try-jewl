@@ -64,7 +64,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.container}>
-        <div className={styles.containerWrapper}>
+        <div className={`${styles.containerWrapper} mt-24 md:mt-24 sm:mt-20`}>
           <header className={styles.header}>
             <h1 className={styles.mainHeading}>Looking for a needle<br className="block sm:hidden" /> in a haystack?</h1>
             <p className="text-xl text-gray-700">

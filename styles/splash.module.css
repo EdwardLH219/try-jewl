@@ -16,7 +16,7 @@
 .containerWrapper {
   max-width: 1200px;
   margin: auto;
-  padding: 4vh 0 2vh 0;
+  padding: 8rem 1rem 2vh 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -185,6 +185,10 @@
   .aboutText {
     font-size: 0.95rem;
   }
+  
+  .containerWrapper {
+    padding: 7rem 1rem 2vh 1rem;
+  }
 }
 
 /* Mobile responsive - stack buttons vertically */
@@ -208,7 +212,7 @@
   }
   
   .containerWrapper {
-    padding: 3vh 0.5rem 0 0.5rem;
+    padding: 6rem 1rem 2vh 1rem;
   }
   
   .container {

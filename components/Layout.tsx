@@ -274,22 +274,26 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       
-      <header className="sticky-header bg-white backdrop-blur py-6 shadow-md">
-        <div className="container mx-auto flex justify-center items-center">
-          <div className="flex items-center">
-            <Link href="/">
-              <div className="cursor-pointer">
-                <Image
-                  src="/logo-blackV2.png" 
-                  alt="jewl.ai logo" 
-                  width={192} 
-                  height={58}
-                  className="h-14 w-auto" 
-                  unoptimized
-                  priority
-                />
+      <header className="fixed top-4 left-0 right-0 z-50 px-4">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="bg-white/40 backdrop-blur-md py-3 rounded-2xl border border-gray-300/30 shadow-sm">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-center items-center">
+                <Link href="/">
+                  <div className="cursor-pointer">
+                    <Image
+                      src="/logo-blackV3.png"
+                      alt="jewl.ai logo"
+                      width={154}
+                      height={46}
+                      className="h-11 w-auto"
+                      unoptimized
+                      priority
+                    />
+                  </div>
+                </Link>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </header>
