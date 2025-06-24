@@ -98,7 +98,7 @@ export default function HowItWorks() {
             </div>
             <div className="flex justify-center">
               <div className="bg-[#F8F8F8] rounded-[18px] rounded-tl-sm p-4 relative min-h-[80px] flex flex-col justify-center max-w-[500px] w-full">
-                <p className="text-lg">Show the May pay receipt from Ben</p>
+                <p className="text-lg">Store my New York flight ref # PBWJLN</p>
                 <p className="text-xs text-gray-500 text-right absolute bottom-3 right-4">
                   {currentTime} <img src="/icons/blueTicks.png" alt="Read" className="inline-block h-3.5 ml-0.5" />
                 </p>
