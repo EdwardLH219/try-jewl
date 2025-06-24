@@ -63,62 +63,87 @@ export default function Home() {
         <link rel="canonical" href="https://try-jewl.netlify.app/" />
       </Head>
 
-      <div className={styles.container}>
-        <div className={styles.containerWrapper}>
-          <header className={styles.header}>
-            <h1 className={styles.mainHeading}>Looking for a needle<br className="block sm:hidden" /> in a haystack?</h1>
-            <p className="text-xl text-gray-700">
-              Get that exact info instantly using simple messaging apps
+      <div className="section-light min-h-[800px] flex items-center">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="gradient-text mb-8">
+              Looking for a needle<br className="block sm:hidden" /> in a haystack?
+            </h1>
+            <p className="text-xl text-gray-600 mb-16">
+              Get your exact info instantly<br className="block sm:hidden" /> using simple messaging apps
             </p>
-          </header>
-
-          <section className={styles.ctaSection}>
-            <h2 className={styles.ctaHeading}>Start now!</h2>
-            <div className={styles.buttonContainer} role="group">
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
                 href="https://wa.me/17863213799?text=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.ctaButton} 
+                className="bg-white text-black hover:bg-gray-100 flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold transition-colors border border-black" 
                 aria-label="Connect WhatsApp"
               >
-                <img src="/icons/wa.png" alt="WhatsApp" className={styles.buttonIcon} />
+                <img src="/icons/wa.png" alt="WhatsApp" className="w-6 h-6" />
                 Connect WhatsApp
               </a>
               <a 
                 href="https://t.me/StarlogikJewlBot"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.ctaButton} 
+                className="btn-primary flex items-center justify-center gap-2" 
                 aria-label="Connect Telegram"
               >
-                <img src="/icons/T.webp" alt="Telegram" className={styles.buttonIcon} />
+                <img src="/icons/T.webp" alt="Telegram" className="w-6 h-6" />
                 Connect Telegram
               </a>
             </div>
-          </section>
+          </div>
         </div>
       </div>
 
-      <section className="w-full bg-black">
+      <section className="section-muted">
         <HowItWorks />
       </section>
 
-      <section className="w-full bg-[#F5F5F5]">
-        <div className="w-full bg-[#F5F5F5]">
-          <section className="py-12 px-6">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-[2rem] md:text-4xl font-bold text-center mb-6">About</h2>
-              <div className="text-center space-y-6">
-                <p className="text-xl text-gray-700">
-                  We are a team of passionate tech enthusiasts who believe that finding your crown jewels should not be a treasure hunt.
-                </p>
-                <p className="text-xl text-gray-700">
-                  Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info retrieval as simple as sending a message.
-                </p>
+      <section className="section-light section-padding">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-black text-white rounded-3xl p-8">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+                <div className="max-w-xl text-center md:text-left">
+                  <h2 className="text-white text-4xl font-semibold mb-8">About</h2>
+                  <div className="space-y-6">
+                    <p className="text-xl opacity-80">
+                      We are a team of passionate tech enthusiasts who believe that finding your crown jewels should not be a treasure hunt.
+                    </p>
+                    <p className="text-xl opacity-80">
+                      Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info retrieval as simple as sending a message.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center gap-4 md:ml-8">
+                  <a 
+                    href="https://wa.me/17863213799?text=Hello"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 w-64 hover:bg-gray-100 transition-colors" 
+                    aria-label="Connect WhatsApp"
+                  >
+                    <img src="/icons/wa.png" alt="WhatsApp" className="w-6 h-6" />
+                    Connect WhatsApp
+                  </a>
+                  <a 
+                    href="https://t.me/StarlogikJewlBot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-white text-black px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 w-64 hover:bg-gray-100 transition-colors" 
+                    aria-label="Connect Telegram"
+                  >
+                    <img src="/icons/T.webp" alt="Telegram" className="w-6 h-6" />
+                    Connect Telegram
+                  </a>
+                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
     </>

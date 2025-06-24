@@ -20,60 +20,60 @@ export default function TermsOfServiceModal() {
         
         <div className="prose prose-sm dark:prose-invert max-w-none">
           <p className="mb-6">
-            Welcome to Jewl! These Terms of Service ("Terms") govern your use of the Jewl website, chat interfaces, and related services ("Services"). By accessing or using Jewl, you agree to these Terms.
+            Welcome to Jewl ("we", "our", or "us"). By using our services, you agree to these terms. Please read them carefully.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">1. Who We Are</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">1. Acceptance of Terms</h2>
           <p className="mb-4">
-            Jewl is an AI-powered assistant that helps you search and retrieve information from your documents using natural language, via platforms like WhatsApp, Slack, and others.
+            By accessing or using Jewl's services, you agree to be bound by these Terms of Service and all applicable laws and regulations.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">2. Your Responsibilities</h2>
-          <p className="mb-2">By using Jewl, you agree to:</p>
+          <h2 className="text-xl font-bold mt-6 mb-4">2. Description of Service</h2>
+          <p className="mb-4">
+            Jewl provides an AI-powered data retrieval service that connects with various messaging platforms and document repositories. The service allows users to search and retrieve information from their connected accounts.
+          </p>
+
+          <h2 className="text-xl font-bold mt-6 mb-4">3. User Responsibilities</h2>
           <ul className="list-disc pl-6 mb-4">
-            <li>Provide accurate information when signing up or connecting services.</li>
-            <li>Only upload or connect documents you have legal access to.</li>
-            <li>Not misuse the service (e.g., attempting to hack, overload, or reverse engineer the system).</li>
+            <li className="mb-2">You must provide accurate information when using our services</li>
+            <li className="mb-2">You are responsible for maintaining the security of your account</li>
+            <li className="mb-2">You agree not to use the service for any illegal or unauthorized purpose</li>
+            <li className="mb-2">You must comply with all applicable laws and regulations</li>
           </ul>
-          <p className="mb-4">You are responsible for how Jewl is used through your accounts or connected platforms.</p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">3. Your Data & Privacy</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">4. Data Usage and Privacy</h2>
           <p className="mb-4">
-            We respect your privacy. Please review our [Privacy Policy] for how we collect, use, and protect your data. You retain ownership of your documents and messages.
+            Your use of Jewl is also governed by our Privacy Policy. We process your data as described in that policy and in accordance with applicable data protection laws.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">4. Acceptable Use</h2>
-          <p className="mb-2">You agree not to use Jewl to:</p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Violate laws or regulations</li>
-            <li>Distribute harmful, unlawful, or misleading content</li>
-            <li>Infringe on the rights of others</li>
-          </ul>
-          <p className="mb-4">We reserve the right to suspend or terminate accounts violating these rules.</p>
-
-          <h2 className="text-xl font-bold mt-6 mb-4">5. Availability & Modifications</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">5. Third-Party Services</h2>
           <p className="mb-4">
-            Jewl is a work in progress. We may change, pause, or discontinue features at any time, without notice. We're not liable for any disruptions, data loss, or delays caused by third-party integrations or outages.
+            Jewl integrates with third-party services like WhatsApp, Telegram, and document storage providers. Your use of these services is subject to their respective terms and conditions.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">6. Disclaimer of Warranties</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">6. Intellectual Property</h2>
           <p className="mb-4">
-            Jewl is provided "as is." While we strive to offer reliable results, we do not guarantee the accuracy, completeness, or reliability of information retrieved. Use your own judgment when acting on AI-generated answers.
+            All content, features, and functionality of Jewl's services are owned by us or our licensors and are protected by copyright and other intellectual property laws.
           </p>
 
           <h2 className="text-xl font-bold mt-6 mb-4">7. Limitation of Liability</h2>
           <p className="mb-4">
-            To the fullest extent allowed by law, Jewl and its team will not be liable for any indirect, incidental, or consequential damages resulting from your use of the service.
+            Jewl provides its services "as is" and makes no warranties, express or implied. We shall not be liable for any indirect, incidental, special, or consequential damages.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">8. Governing Law</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">8. Changes to Terms</h2>
           <p className="mb-4">
-            These Terms are governed by the laws of [Your Country or State]. Any disputes will be handled in the courts of that jurisdiction.
+            We may modify these terms at any time. We will notify users of any material changes. Your continued use of Jewl after such modifications constitutes acceptance of the updated terms.
           </p>
 
-          <h2 className="text-xl font-bold mt-6 mb-4">9. Contact</h2>
+          <h2 className="text-xl font-bold mt-6 mb-4">9. Termination</h2>
           <p className="mb-4">
-            For questions or support, please contact us at: [support@jewl.ai]
+            We reserve the right to terminate or suspend access to our services, without prior notice, for conduct that we believe violates these terms or is harmful to other users, us, or third parties.
+          </p>
+
+          <h2 className="text-xl font-bold mt-6 mb-4">Contact</h2>
+          <p className="mb-4">
+            If you have any questions about these Terms, please contact us at: [support@jewl.ai]
           </p>
         </div>
       </DialogContent>
