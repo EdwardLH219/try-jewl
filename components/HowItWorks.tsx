@@ -77,8 +77,7 @@ export default function HowItWorks() {
           </div>
         </div>
         <p className="text-white text-center text-xl mb-12">
-          Store and retrieve important info<span className="hidden sm:inline">,</span><br className="block sm:hidden" /> here some ideas…
-        </p>
+          Store and retrieve important info<span className="hidden sm:inline">,</span><br className="block sm:hidden" /> here some ideas ...</p>
         <div className="max-w-3xl mx-auto">
           <div className="space-y-3">
             <div className="flex justify-center">
