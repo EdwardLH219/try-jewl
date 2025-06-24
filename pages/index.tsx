@@ -68,7 +68,7 @@ export default function Home() {
           <header className={styles.header}>
             <h1 className={styles.mainHeading}>Looking for a needle<br className="block sm:hidden" /> in a haystack?</h1>
             <p className="text-xl text-gray-700">
-              Get that exact info instantly using simple messaging apps
+              Get your exact info instantly using simple messaging apps
             </p>
           </header>
 

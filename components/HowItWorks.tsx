@@ -30,7 +30,7 @@ export default function HowItWorks() {
     <div className="py-12 px-6">
       <div className="max-w-4xl mx-auto">
         <p className="text-white text-center text-xl mb-8">
-          Secure & Instant, Retrieval of that<br className="block sm:hidden" /> 1 Precise Piece of Data.
+          Secure & Instant Retrieval of that<br className="block sm:hidden" /> 1 Precise Piece of Data.
         </p>
         <h2 className="text-[2rem] md:text-3xl font-bold text-white text-center mb-12">How it works</h2>
         <div className="flex flex-col md:flex-row gap-6 mb-12">
