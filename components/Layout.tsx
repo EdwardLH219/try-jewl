@@ -309,7 +309,10 @@ export default function Layout({ children }: LayoutProps) {
               <p className="text-sm text-white">© {new Date().getFullYear()} jewl.ai. All rights reserved.</p>
             </div>
             <div className="text-center md:flex-1 md:flex md:justify-center">
-              <p className="text-sm text-white">Jewl is a dito.tech innovation</p>
+              <p className="text-sm text-white">
+                Jewl is a StarAI innovation.<br className="block md:hidden" />
+                A Starlogik Corporation Company.
+              </p>
             </div>
             <div className="flex space-x-6 md:flex-1 md:justify-end">
               <div className="text-sm text-white hover:text-gray-300">
