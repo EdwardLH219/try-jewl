@@ -24,25 +24,17 @@ type IntegrationType = 'dropbox' | 'sharepoint' | 'googledocs' | 'whatsapp' | 's
 
 export default function Layout({ children }: LayoutProps) {
   const [activeIntegration, setActiveIntegration] = useState<IntegrationType>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   
   // Add scroll event listener for sticky header
   useEffect(() => {
-    const header = document.querySelector('.sticky-header');
-    
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        header?.classList.add('scrolled');
-      } else {
-        header?.classList.remove('scrolled');
-      }
+      const scrolled = window.scrollY > 10;
+      setIsScrolled(scrolled);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
-    
-    // Cleanup
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
   const handleIntegrationClick = (integration: IntegrationType) => {
@@ -274,9 +266,9 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </Head>
       
-      <header className="fixed top-4 left-0 right-0 z-50 px-4">
+      <header className={`fixed top-4 left-0 right-0 z-50 px-4 transition-all duration-300 ${isScrolled ? 'md:top-4 top-2' : 'top-4'}`}>
         <div className="max-w-[1400px] mx-auto">
-          <div className="bg-white/40 backdrop-blur-md py-3 rounded-2xl border border-gray-300/30 shadow-sm">
+          <div className={`bg-white/40 backdrop-blur-md transition-all duration-300 ${isScrolled ? 'py-2 md:py-3' : 'py-3'} rounded-2xl border border-gray-300/30 shadow-sm`}>
             <div className="container mx-auto px-4">
               <div className="flex justify-center items-center">
                 <Link href="/">
@@ -286,7 +278,7 @@ export default function Layout({ children }: LayoutProps) {
                       alt="jewl.ai logo"
                       width={154}
                       height={46}
-                      className="h-11 w-auto"
+                      className={`transition-all duration-300 ${isScrolled ? 'h-8 md:h-11' : 'h-11'} w-auto`}
                       unoptimized
                       priority
                     />
