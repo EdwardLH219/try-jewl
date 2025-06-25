@@ -111,7 +111,7 @@ export default function Home() {
               <h2 className="text-[2rem] md:text-4xl font-bold text-center mb-6">About</h2>
               <div className="text-center space-y-6">
                 <p className="text-lg text-gray-700">
-                  We are a team of passionate AI enthusiasts.<br />
+                  We are a team of passionate<br className="block md:hidden" /> AI enthusiasts.<br />
                   Our mission is to bridge the gap between your data buried in repositories and the messaging apps you love and use every day, making info storage and retrieval as simple as sending a message.
                 </p>
               </div>
