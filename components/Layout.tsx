@@ -310,8 +310,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="text-center md:flex-1 md:flex md:justify-center">
               <p className="text-sm text-white">
-                Jewl is a StarAI innovation.<br className="block md:hidden" />
-                A Starlogik Corporation Company.
+                Jewl is a StarAI innovation.<br className="block md:hidden" /> A Starlogik Corporation Company.
               </p>
             </div>
             <div className="flex space-x-6 md:flex-1 md:justify-end">
